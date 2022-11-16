@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-5 {
+    font-size: 6em;
+    color: #999999;
+}
+.col-md-8.fs-4 {
+    font-size: 1.1em !important;
+    font-weight: 500;
+    word-spacing: 35px;
+    letter-spacing: 4px;
+    color: #222;
+}
+button.btn {
+    background-color: #FFE8E8 !important;
+    padding: 1.5em;
+    letter-spacing: 0.5em;
+    color: #222;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0px !important;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border: 1px solid #FFE8E8;
+}
+
+section.container {
+    position: relative;
+}
+.background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F6F6F6;
+    height: 680px;
+    width: 1035px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: -1;
+}
+.sosmed.col-md-8.fs-4.mb-5 {
+    color: #222;
+}
+.navbar.navbar-expand-sm.mx-auto {
+    width: 630px;
+}
+ul.navbar-nav li.nav-item a {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #222;
+}
+
+.work-section .row {
+    margin-bottom: 60px !important;
+}
+.work-section h2.work-text {
+    font-size: 80px !important;
+    color: #999999;
+    font-weight: bold;
+}
+.work-section .row .col-6 h2 {
+    color: #6D6D6D;
+    font-size: 32px;
+    font-weight: 500;
+}
+.work-section .row .col-6 .since {
+    color: #b9b9b9;
+    font-size: 18px;
+    font-weight: 500;
+}
+.work-section .row .col-6 p.text-about {
+    color: #6D6D6D;
+}
+.work-section .row .col-6 .pill-skill span {
+    background-color: #EDEDED;
+    color: #666666;
+    font-weight: 500;
+    font-size: 12px;
+    border-radius: 16px;
+    padding:10px 15px;
+}
+
+.projects-section .projects-text {
+    font-size: 80px !important;
+    color: #999999;
+    font-weight: bold;
+}
+
+.projects-section .row .col-6 img {
+    width: 120%;
+}
+.projects-section .row .col-6 h2,
+.projects-section .row .col-4 h2 {
+    color: #999999;
+    font-size: 60px;
+    font-weight: bold;
+}
+.projects-section .row .col-6 p ,
+.projects-section .row .col-4 p {
+    color: #6D6D6D;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.29px;
+    line-height: 33px;
+}
+.projects-section .row .col-6.padding-project {
+    padding: 5rem 0rem 0rem 10rem;
+}
+.projects-section .row.projects1 ,
+.projects-section .row.projects2 {
+    margin-bottom: 120px;
+}
+
+.padding-project2 {
+    padding: 0;
+}
+
+.about-section .about-text {
+    font-size: 80px !important;
+    color: #999999;
+    font-weight: bold;
+}
+
+.about-section .content p {
+    line-height: 36px;
+    letter-spacing: 0.39px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6D6D6D;
+}
+.about-section .content .images-content {
+    position: relative;
+}
+.about-section .content .images-content img {
+    width: 100%;
+}
+.about-section .content .images-content .info-card {
+    width: 430px;
+    height: 276px;
+    background-color: #FFE8E8;
+    position: absolute;
+    top: 146px;
+    right: 80px;
+    padding: 40px;
+}
+.about-section .content .paragraf2 {
+    width: 544px;
+}
+.about-section .content .images-content .info-card ul {
+    list-style: none !important;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.about-section .content .images-content .info-card span {
+   font-weight: 400; 
+   letter-spacing: 6.33px;
+   font-size: 18px;
+   color: #7E7C7C;
+   text-transform: uppercase;
+}
+.about-section .content .images-content .info-card ul li {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.39px;
+    color: #2E2E2E;
+}
+
+.footer {
+    background-color: #FFE8E8;
+    width: 100%;
+    height: 204px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer p {
+    color: #6D6D6D;
+    letter-spacing: 0.39px;
+}
