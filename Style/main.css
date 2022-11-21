@@ -3,11 +3,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .display-5 {
-    font-size: 6em;
+    font-size: 5em;
     color: #999999;
+}
+a.link-project {
+    text-decoration: none !important;
+    margin-top: 15px !important;
+}
+a.link-project:hover {
+    text-decoration: underline !important;
 }
 .col-md-8.fs-4 {
     font-size: 1.1em !important;
@@ -16,6 +24,9 @@
     letter-spacing: 4px;
     color: #222;
 }
+a:hover {
+    color: #222 !important;
+}
 button.btn {
     background-color: #FFE8E8 !important;
     padding: 1.5em;
@@ -23,22 +34,39 @@ button.btn {
     color: #222;
     font-weight: 500;
     text-transform: uppercase;
-    border-radius: 0px !important;
+    border-radius: 0px;
+    transition: 0.5s;
 }
-
+a > .link-project.btn {
+    letter-spacing: 0;
+    padding: 1.2em 2.5em;
+    text-transform: capitalize;
+}
+a > i.bi {
+    width: 20px;
+    height: 20px;
+}
+a > button.link-project > svg {
+    color: #222;
+    transition: 0.5s;
+}
+a:hover > button.link-project > svg {
+    transform: translateX(15px);
+}
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
     border: 1px solid #FFE8E8;
 }
 
-section.container {
+.container {
     position: relative;
+    min-height: 100vh;
 }
 .background {
     position: absolute;
     top: 0;
     right: 0;
     background-color: #F6F6F6;
-    height: 680px;
+    height: 620px;
     width: 1035px;
     display: flex;
     justify-content: flex-end;
@@ -47,8 +75,8 @@ section.container {
 .sosmed.col-md-8.fs-4.mb-5 {
     color: #222;
 }
-.navbar.navbar-expand-sm.mx-auto {
-    width: 630px;
+.navbar.navbar-expand.mx-auto {
+    width: 530px;
 }
 ul.navbar-nav li.nav-item a {
     text-transform: uppercase;
@@ -62,60 +90,62 @@ ul.navbar-nav li.nav-item a {
     margin-bottom: 60px !important;
 }
 .work-section h2.work-text {
-    font-size: 80px !important;
+    font-size: 4em;
     color: #999999;
     font-weight: bold;
 }
-.work-section .row .col-6 h2 {
+.work-section .row .col-md-6 h2 {
     color: #6D6D6D;
     font-size: 32px;
     font-weight: 500;
 }
-.work-section .row .col-6 .since {
+.work-section .row .col-md-6 .since {
     color: #b9b9b9;
     font-size: 18px;
     font-weight: 500;
 }
-.work-section .row .col-6 p.text-about {
+.work-section .row .col-md-6 p.text-about {
     color: #6D6D6D;
 }
-.work-section .row .col-6 .pill-skill span {
+.work-section .row .col-md-6 .pill-skill span {
     background-color: #EDEDED;
     color: #666666;
     font-weight: 500;
     font-size: 12px;
     border-radius: 16px;
     padding:10px 15px;
+    margin: 5px;
 }
 
 .projects-section .projects-text {
-    font-size: 80px !important;
+    font-size: 80px;
     color: #999999;
     font-weight: bold;
 }
 
-.projects-section .row .col-6 img {
-    width: 120%;
+.projects-section .row .col-lg-6 img {
+    width: 100%;
 }
-.projects-section .row .col-6 h2,
-.projects-section .row .col-4 h2 {
+.projects-section .row .col-lg-6 h2,
+.projects-section .row .col-lg-4 h2 {
     color: #999999;
     font-size: 60px;
     font-weight: bold;
 }
-.projects-section .row .col-6 p ,
-.projects-section .row .col-4 p {
+.projects-section .row .col-lg-6 p ,
+.projects-section .row .col-lg-4 p {
     color: #6D6D6D;
     font-weight: 400;
     font-size: 18px;
     letter-spacing: 0.29px;
     line-height: 33px;
 }
-.projects-section .row .col-6.padding-project {
-    padding: 5rem 0rem 0rem 10rem;
+.projects-section .row .col-lg-6.padding-project {
+    padding: 0;
 }
 .projects-section .row.projects1 ,
-.projects-section .row.projects2 {
+.projects-section .row.projects2,
+.projects-section .row.projects3 {
     margin-bottom: 120px;
 }
 
@@ -124,9 +154,13 @@ ul.navbar-nav li.nav-item a {
 }
 
 .about-section .about-text {
-    font-size: 80px !important;
+    font-size: 80px;
     color: #999999;
     font-weight: bold;
+}
+
+.content {
+    position: relative;
 }
 
 .about-section .content p {
@@ -152,12 +186,11 @@ ul.navbar-nav li.nav-item a {
     padding: 40px;
 }
 .about-section .content .paragraf2 {
-    width: 544px;
+    max-width: 544px;
 }
 .about-section .content .images-content .info-card ul {
     list-style: none !important;
     padding: 0;
-    margin-bottom: 20px;
 }
 .about-section .content .images-content .info-card span {
    font-weight: 400; 
@@ -175,13 +208,128 @@ ul.navbar-nav li.nav-item a {
 
 .footer {
     background-color: #FFE8E8;
-    width: 100%;
-    height: 204px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 30px;
 }
 .footer p {
     color: #6D6D6D;
     letter-spacing: 0.39px;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .about-section .content .images-content .info-card {
+        width: 100%;
+        height: 100%;
+        background-color: #FFE8E8;
+        position: static;
+        padding: 40px;
+        margin-top: 48px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+
+    .background {
+        display: none;
+    }
+    .py-5, .px-5  {
+        padding: 0 !important;
+    }
+    .mx-auto {
+        margin: 0 !important;
+    }
+    ul.navbar-nav li.nav-item a {
+        margin: 0;
+        margin-right: 15px !important;
+    }
+    .nav-link {
+        margin: 0 !important;
+    }
+    .navbar.navbar-expand.mx-auto {
+        width: 100%;
+
+    }
+    .projects-section > .row > .col-lg-6 > img {
+        text-align: center !important;
+    }
+    .projects-section .row .col-lg-6.padding-project {
+        padding: 0;
+    }
+    .row.projects2 .col-lg-4 {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .display-5 {
+        font-size: 4em;
+    }
+    .work-section h2.work-text {
+        font-size: 3em;
+    }
+    .projects-section .projects-text {
+        font-size: 4em;
+    }
+    .projects-section .row .col-lg-6 h2, .projects-section .row .col-lg-4 h2 {
+        font-size: 3em;
+    }
+
+}
+@media only screen and (max-width: 600px)  {
+    .display-5 {
+        font-size: 3em;
+    }
+    .col-md-8.fs-4 {
+        margin-top: 30px;
+    }
+    .container {
+        padding: 2em !important;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .work-section h2.work-text {
+        font-size: 2em;
+    }
+    .work-section .row .col-md-6 h2 {
+        font-size: 1.5em;
+    }
+    .work-section .row .col-md-6 .since {
+        font-size: 1em;
+    }
+    .projects-section .row .col-lg-6 h2, .projects-section .row .col-lg-4 h2 {
+        font-size: 2em;
+    }
+    .about-section .about-text {
+        font-size: 3em;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .container {
+        padding: 1em !important;
+    }
+    button.btn {
+        padding: 1em;
+        letter-spacing: 0.2em;
+        font-size: 1em;
+    }
+    .display-5 {
+        font-size: 2em;
+    }
+    .about-section .content .images-content .info-card {
+        padding: 20px;
+    }
+    .about-section .content .images-content .info-card span,
+    .about-section .content .images-content .info-card ul li {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
