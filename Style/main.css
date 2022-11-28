@@ -217,6 +217,29 @@ ul.navbar-nav li.nav-item a {
     color: #6D6D6D;
     letter-spacing: 0.39px;
 }
+.page-top {
+    position: fixed;
+    bottom: 80px;
+    right: 85px;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F6F6F6;
+    color: #222;
+    cursor: pointer;
+}
+.page-top a {
+    text-decoration: none;
+    color: #ffe8e8;
+}
+.page-top a:hover {
+    color: #ffe8e8;
+    
+}
+
 
 
 @media only screen and (max-width: 1200px) {
