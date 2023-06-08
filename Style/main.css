@@ -129,7 +129,7 @@ ul.navbar-nav li.nav-item a {
 .projects-section .row .col-lg-6 h2,
 .projects-section .row .col-lg-4 h2 {
     color: #999999;
-    font-size: 60px;
+    font-size: 2.5em;
     font-weight: bold;
 }
 .projects-section .row .col-lg-6 p ,
@@ -151,6 +151,10 @@ ul.navbar-nav li.nav-item a {
 
 .padding-project2 {
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .about-section .about-text {
